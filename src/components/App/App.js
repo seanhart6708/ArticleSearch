@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 
 import SearchBar from '../SearchBar/SearchBar.js';
-import ItemList from '../ItemList/ItemList.js';
-import Walmart from '../../util/Walmart.js';
+import ItemList from '../ArticleList/ItemList.js.js.js';
+import Walmart from '../../util/NYT.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,11 +13,11 @@ class App extends React.Component {
       items: []
     }
 
-    this.searchWalmart = this.searchWalmart.bind(this);
+    this.searchNYT = this.searchNYT.bind(this);
   }
 
-  searchWalmart() {
-    Walmart.search(price).then(items => {
+  searchNYT() {
+    NYT.search(price).then(items => {
       this.setState({ items: items })
     })
   }
@@ -25,8 +25,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Walmart Item Search</h1>
-        <SearchBar searchWalmart={this.searchWalmart}/>
+        <h1>NYT Article Search</h1>
+        <SearchBar searchNYT={this.searchNYT}/>
         <ItemList items={this.state.items}/>
       </div>
     );

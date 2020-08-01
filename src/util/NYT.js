@@ -1,0 +1,5 @@
+const NYT = {
+    search(price) {
+        
+    }
+}

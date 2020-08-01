@@ -5,19 +5,19 @@ class SearchBar extends React.Component {
         super(props);
 
         this.state = {
-            salePrice: ''
+            searchCriteria: ''
         };
 
         this.handleTermChange = this.handleTermChange.bind(this);
         this.handleSearch = this.handleSearch.bind(this);
     }
 
-    handleTermChange(event) {
-        this.setState({ salePrice: event.target.value });
+    handleCriteriaChange(event) {
+        this.setState({ searchCriteria: event.target.value });
     };
 
     handleSearch(event) {
-        this.props.searchWalmart(this.state.salePrice);
+        this.props.searchNYT(this.state.searchCriteria);
 
         event.preventDefault();
     };
@@ -25,8 +25,12 @@ class SearchBar extends React.Component {
     render() {
         return (
             <form>
-                <input onChange={this.handleTermChange} placeholder='Type in the price of the item'/>
-                <input onClick={this.handleSearch} type='submit'/>
+                <label htmlFor="chooseCriteria"/>
+                <select onChange={this.handleCriteriaChange} name="chooseCriteria">
+                    <option value="Arts">Arts</option>
+                    <option value="Automobiles">Automobiles</option>
+                    <option value="Blogs">Blogs</option>
+                </select>
             </form>
         )
     }
