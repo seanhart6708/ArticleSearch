@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <form>
-                <label htmlFor="chooseCriteria">Select the most popular articles in the last week</label>
+                <label htmlFor="chooseCriteria">Select the most popular articles in the last week by specific criteria</label>
                 <select onChange={this.handleTopicChange} name="chooseCriteria">
                     <option value="emailed">Emailed</option>
                     <option value="shared">Shared</option>

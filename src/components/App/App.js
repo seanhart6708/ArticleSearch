@@ -17,7 +17,7 @@ class App extends React.Component {
   }
 
   // After receiving the order to query the api from the search bar, App.js makes a request to the api
-  // The results of the request are then set to the articles state of App.js
+  // The results of the request are then set to the articles state of App.js; one example article would be { id: 1, title: ArticleTitle, ... }
   // After setting its articles state as the results of the request, App.js calls Article list with the App.js articles state
   searchNYT() {
     NYT.search(topic).then(articles => {
