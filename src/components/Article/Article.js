@@ -6,7 +6,7 @@ class Article extends React.Component {
         return (
             <div>
                 <h4>{this.props.article.title}</h4>
-                <a href={this.props.article.url}>View Article</a>
+                {/*<a href={this.props.article.url}>View Article</a>*/}
             </div>
         )
     }

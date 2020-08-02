@@ -3,9 +3,10 @@ const apiKey='yw0nFPkh4OElSGN5youzKK5A0SG6pOj3';
 const NYT = {
     search(topic) {
         // used to search with hyphen
-        const mediaMetadata = 'media-metadata';
+        //const mediaMetadata = 'media-metadata';
+        
 
-        fetch(`https://api.nytimes.com/svc/mostpopular/v2/${topic}/7.json?api-key=${apiKey}`)
+        return fetch(`https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${apiKey}`)
             .then(response => {
                 return response.json();
             })
@@ -15,9 +16,12 @@ const NYT = {
                         id: article.id,
                         title: article.title,
                         section: article.section,
-                        link: article[mediaMetadata].url
+                        //link: article[mediaMetadata].url
                     }
                 })
+            })
+            .catch(error => {
+                console.log(error);
             })
     }
 }
