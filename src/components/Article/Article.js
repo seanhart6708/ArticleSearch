@@ -1,6 +1,7 @@
 import React from 'react';
 
 class Article extends React.Component {
+    // The article component takes the articles from article list and displays their information
     render() {
         return (
             <div>

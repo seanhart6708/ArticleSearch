@@ -1,5 +1,7 @@
 import React from 'react';
 
+// When the search bar is clicked, App.js makes a request to the NYT api with the current state of the search bar (aka the topic)
+
 class SearchBar extends React.Component {
     constructor(props) {
         super(props);
