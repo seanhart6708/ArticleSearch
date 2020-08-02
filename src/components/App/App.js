@@ -10,15 +10,15 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      items: []
+      articles: []
     }
 
     this.searchNYT = this.searchNYT.bind(this);
   }
 
   searchNYT() {
-    NYT.search(price).then(items => {
-      this.setState({ items: items })
+    NYT.search(topic).then(articles => {
+      this.setState({ articles: articles })
     })
   }
   
