@@ -4,9 +4,8 @@ const NYT = {
     search(topic) {
         // used to search with hyphen
         //const mediaMetadata = 'media-metadata';
-        
 
-        return fetch(`https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${apiKey}`)
+        return fetch(`https://api.nytimes.com/svc/mostpopular/v2/${topic}/7.json?api-key=${apiKey}`)
             .then(response => {
                 return response.json();
             })

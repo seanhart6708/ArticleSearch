@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
         super(props);
 
         this.state = {
-            searchTopic: ''
+            searchTopic: 'viewed'
         };
 
         this.handleTopicChange = this.handleTopicChange.bind(this);
@@ -15,7 +15,8 @@ class SearchBar extends React.Component {
     }
 
     handleTopicChange(event) {
-        this.setState({ searchTopic: event.target.value });
+        const searchTopic = document.getElementById('chooseCriteria').value;
+        this.setState({ searchTopic: searchTopic });
     };
 
     handleSearch(event) {
@@ -28,7 +29,7 @@ class SearchBar extends React.Component {
         return (
             <form>
                 <label htmlFor="chooseCriteria">Select the most popular articles in the last week by specific criteria</label>
-                <select onChange={this.handleTopicChange} name="chooseCriteria">
+                <select onChange={this.handleTopicChange} name="chooseCriteria" id="chooseCriteria">
                     <option value="emailed">Emailed</option>
                     <option value="shared">Shared</option>
                     <option value="viewed">Viewed</option>
