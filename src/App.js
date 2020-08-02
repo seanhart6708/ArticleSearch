@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import SearchBar from './Components/SearchBar/SearchBar.js';
-import ArticleList from './Components/ArticleList/ArticleList.js';
+import SearchBar from './components/SearchBar/SearchBar.js';
+import ArticleList from './components/ArticleList/ArticleList.js';
 import NYT from './util/NYT.js';
 
 class App extends React.Component {
