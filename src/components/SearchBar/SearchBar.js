@@ -33,10 +33,10 @@ class SearchBar extends React.Component {
                     <option value="shared">Shared</option>
                     <option value="viewed">Viewed</option>
                 </select>
-                <input onClick={this.handleSearch} type="submit">Submit Request</input>
+                <input onClick={this.handleSearch} type="submit" />
             </form>
         )
     }
 }
 
-module.exports = SearchBar;
+export default SearchBar;

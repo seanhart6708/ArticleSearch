@@ -12,4 +12,4 @@ class Article extends React.Component {
     }
 }
 
-module.exports = Article;
+export default Article;

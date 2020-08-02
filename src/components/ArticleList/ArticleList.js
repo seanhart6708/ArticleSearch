@@ -17,4 +17,4 @@ class ArticleList extends React.Component {
     }
 }
 
-module.exports = ArticleList;
+export default ArticleList;

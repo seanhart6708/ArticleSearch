@@ -22,4 +22,4 @@ const NYT = {
     }
 }
 
-module.exports = NYT;
+export default NYT;
