@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 
 import SearchBar from '../SearchBar/SearchBar.js';
-import ItemList from '../ArticleList/ItemList.js.js.js';
-import Walmart from '../../util/NYT.js';
+import ArticleList from '../ArticleList/ArticleList.js';
+import NYT from '../../util/NYT.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class App extends React.Component {
       <div className="App">
         <h1>NYT Article Search</h1>
         <SearchBar searchNYT={this.searchNYT}/>
-        <ItemList items={this.state.items}/>
+        <ArticleList articles={this.state.articles}/>
       </div>
     );
   }

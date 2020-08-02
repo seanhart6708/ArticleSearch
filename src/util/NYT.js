@@ -1,4 +1,4 @@
-const apiKey=''
+const apiKey='yw0nFPkh4OElSGN5youzKK5A0SG6pOj3';
 
 const NYT = {
     search(topic) {
@@ -9,6 +9,7 @@ const NYT = {
             .then(jsonResponse => {
                 return jsonResponse.results.map(article => {
                     return {
+                        id: article.id,
                         title: article.title,
                         section: article.section,
                         link: article.media.media-metadata.url
@@ -17,3 +18,5 @@ const NYT = {
             })
     }
 }
+
+module.exports = NYT;
