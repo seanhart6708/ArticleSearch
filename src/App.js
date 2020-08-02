@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import SearchBar from '../SearchBar/SearchBar.js';
-import ArticleList from '../ArticleList/ArticleList.js';
-import NYT from '../../util/NYT.js';
+import SearchBar from './Components/SearchBar/SearchBar.js';
+import ArticleList from './Components/ArticleList/ArticleList.js';
+import NYT from './util/NYT.js';
 
 class App extends React.Component {
   constructor(props) {
