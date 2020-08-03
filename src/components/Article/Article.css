@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+.main {
+    background-color: beige;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Red Rose', cursive;
+    padding-top: 40px;
+}
+
+p {
+    padding: 40px;
+}

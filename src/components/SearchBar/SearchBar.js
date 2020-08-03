@@ -1,4 +1,5 @@
 import React from 'react';
+import './SearchBar.css'
 
 // When the search bar is clicked, App.js makes a request to the NYT api with the current state of the search bar (aka the topic)
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Article.css'
 
 class Article extends React.Component {
     constructor(props) {
@@ -21,10 +22,10 @@ class Article extends React.Component {
     render() {
 
         return (
-            <div>
-                <h4>{this.props.article.title}</h4>
+            <div className="main">
+                <h2>{this.props.article.title}</h2>
                 <p>{this.checkByline(this.props.article)}{this.props.article.section} | {this.props.article.publishedDate}</p>
-                <a href={this.props.article.url} target='_blank' rel="noopener noreferrer">Read Article</a>
+                <p><a href={this.props.article.url} target='_blank' rel="noopener noreferrer">Read Article</a></p>
             </div>
         )
     }
