@@ -1,0 +1,11 @@
+.flex-container {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.article {
+    flex-basis: 33%;
+    background-color: white;
+}

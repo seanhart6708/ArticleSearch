@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Red+Rose&display=swap');
+
 .App {
   text-align: center;
 }
 
 header {
   margin: 0 auto;
-  padding: 15px;
+  height: 500px;
+  background-image: url('https://www.incimages.com/uploaded_files/image/1920x1080/newspaper-pano_33420.jpg');
+  background-size: cover;
 }
 
 h1 {
-  background-color: rgb(143, 224, 150);
-  padding: 20px;
+  position: relative;
+  font-size: 4rem;
   margin: 0 auto;
-  font-family: sans-serif;
-  border: 5px solid black;
-  border-radius: 10px
+  bottom: 300px;
+  width: 50%;
+  height: 50%;
+  color: beige;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  border: 5px solid beige;
 }

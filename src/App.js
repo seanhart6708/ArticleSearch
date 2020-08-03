@@ -29,8 +29,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <header>
-          <h1>NYT Article Search</h1>
         </header>
+        <h1>NYT Article Search</h1>
         <SearchBar searchNYT={this.searchNYT}/>
         <ArticleList articles={this.state.articles}/>
       </div>

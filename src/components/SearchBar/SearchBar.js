@@ -30,13 +30,13 @@ class SearchBar extends React.Component {
     render() {
         return (
             <form>
-                <label id="label" htmlFor="chooseCriteria">Select the most popular articles in the last week by specific criteria</label>
+                <span id="label">Check out the most </span>
                 <select onChange={this.handleTopicChange} name="chooseCriteria" id="chooseCriteria">
                     <option value="emailed">Emailed</option>
                     <option value="shared">Shared</option>
                     <option value="viewed">Viewed</option>
                 </select>
-                {/*<input onClick={this.handleSearch} type="submit" />*/}
+                <span> articles of the week from the New York Times.</span>
             </form>
         )
     }
