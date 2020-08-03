@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+
+header {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+h1 {
+  background-color: rgb(143, 224, 150);
+  padding: 20px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  border: 5px solid black;
+  border-radius: 10px
+}

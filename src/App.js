@@ -28,7 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>NYT Article Search</h1>
+        <header>
+          <h1>NYT Article Search</h1>
+        </header>
         <SearchBar searchNYT={this.searchNYT}/>
         <ArticleList articles={this.state.articles}/>
       </div>
